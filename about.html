@@ -151,48 +151,64 @@ p {
 
 
 
-
 .main-container {
-    display: flex;              /* Enable flexbox */
-    align-items: center;        /* Vertically center content next to the image */
-    gap: 40px;                  /* Space between image and text */
-    padding: 20px;              
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 20px;
+    width: 100%;
+    background: var(--yellow-clr);
+    height: auto;              /* IMPORTANT: remove fixed height */
+    flex-wrap: wrap;           /* Allow stacking */
 }
 
 .head-image {
-    width: 350px;               /* Adjust as needed */
-    height: 330px;
-    border-radius: 10px;        /* Optional rounded corners */
+    width: 350px;
+    max-width: 100%;
+    height: auto;              /* Prevent image overflow */
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .name-head {
+    max-width: 600px;
+    width: 100%;
     display: flex;
-    flex-direction: column;     /* Stack name, title, and summary vertically */
-    justify-content: center;    /* Center content vertically */
-    max-width: 600px;           /* Optional: control text width */
+    flex-direction: column;
+    justify-content: center;
 }
 
-.name-1 {
-    font-size: 18px;
-    color: #555;
-   
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;   /* Stack image + text */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .name-head {
+        align-items: center;
+    }
+
+    .my-name {
+        font-size: 26px;
+    }
 }
 
-.name-head h1 {
-    font-size: 36px;
-    margin: 10px 0;
+/* Small Mobile */
+@media (max-width: 480px) {
+    .head-image {
+        width: 90%;
+    }
+
+    .summary p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
-.summary p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-}
-.my-name{
-    text-align: start;
-    align-items: end;
-    font-size: 10px;
-}
+
     </style>
     
 </head>
@@ -270,4 +286,5 @@ p {
 
 </div>
 </body>
+
 </html>
