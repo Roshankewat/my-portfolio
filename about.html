@@ -63,9 +63,12 @@ h1 {
     
     letter-spacing: .1rem;
     color: #ececec;
-    align-items: center;
+    align-items:center;
     justify-content: center ;
     text-align: center;
+    font-size: 40px;
+    gap: .3rem;
+    
     
 }
 
@@ -73,10 +76,22 @@ p {
     /* max-width: 500px; */
     margin-top: .5rem;
     width: auto;
-    color: var(--gray-clr);
+    color: var(--white-clr);
+    font-weight: 400;
+   
 
 }
-
+.summary-1{
+    color:var(--black-clr);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.my-name{
+    color: var(--white-clr);
+    
+}
 
 
 
@@ -92,7 +107,8 @@ p {
 }
 
 .card {
-    background: #ffffff;
+    /* background: #ffffff; */
+    /* background: var(--yellow-clr); */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -169,6 +185,7 @@ p {
     height: auto;              /* Prevent image overflow */
     object-fit: contain;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .name-head {
@@ -189,6 +206,7 @@ p {
 
     .name-head {
         align-items: center;
+        
     }
 
     .my-name {
@@ -205,6 +223,7 @@ p {
     .summary p {
         font-size: 14px;
         line-height: 1.5;
+        color: var(--black-clr);
     }
 }
 
@@ -214,12 +233,12 @@ p {
 </head>
 <body>
     <div class="main-container">
-        <img src="Head_image-2.png" alt="" class="head-image">
+        <img src="Head_image-1.png.jpeg" alt="" class="head-image">
         <div class="name-head">
             <div class="name-1">Hello, my name is</div>
             <h1 class="my-name">Roshan Kewat</h1>
             <div class="summary">
-                <p>
+                <p class="summary-1">
                     I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I write about web development on my blog and regularly speak at various web conferences and meetups. Want to know how I may help your project? Check out my project case studies and relume
                 </p>
             </div>
@@ -288,3 +307,4 @@ p {
 </body>
 
 </html>
+
