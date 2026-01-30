@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
+/* ---------- RESET ---------- */
 *{
     margin: 0;
     padding: 0;
@@ -7,18 +8,19 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* 🔥 PREVENT HORIZONTAL SCROLL */
 html, body{
     overflow-x: hidden;
 }
 
+/* ---------- VARIABLES ---------- */
 :root{
-    --white:#fff;
-    --black:#000;
+    --white:#ffffff;
+    --black:#000000;
     --gray:#ececec;
     --yellow:#f2bf31;
 }
 
+/* ---------- LAYOUT ---------- */
 .main-container{
     background: var(--black);
     min-height: 100vh;
@@ -32,7 +34,6 @@ html, body{
 }
 
 /* ---------- NAVBAR ---------- */
-
 .navbar{
     height: 14vh;
     display: flex;
@@ -45,6 +46,7 @@ html, body{
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: .1rem;
+    text-transform: uppercase;
 }
 
 .navlist{
@@ -53,9 +55,9 @@ html, body{
 }
 
 li{ list-style: none; }
-
 a{ text-decoration: none; }
 
+/* desktop nav links */
 .navlinks{
     color: var(--white);
     font-size: .9rem;
@@ -64,6 +66,7 @@ a{ text-decoration: none; }
     position: relative;
 }
 
+/* underline (desktop only) */
 .navlinks::before{
     content: '';
     position: absolute;
@@ -72,7 +75,7 @@ a{ text-decoration: none; }
     width: 0;
     height: 2px;
     background: var(--yellow);
-    transition: .3s;
+    transition: width .3s ease;
 }
 
 .navlinks:hover::before,
@@ -85,7 +88,6 @@ a{ text-decoration: none; }
 }
 
 /* ---------- HAMBURGER ---------- */
-
 .hamburger{
     display: none;
     z-index: 5;
@@ -98,8 +100,7 @@ a{ text-decoration: none; }
     cursor: pointer;
 }
 
-/* ---------- HERO ---------- */
-
+/* ---------- HERO SECTION ---------- */
 .hero-section{
     display: flex;
     align-items: center;
@@ -134,11 +135,13 @@ a{ text-decoration: none; }
 
 img{
     width: 100%;
+    height: auto;
 }
 
 h4{
     color: var(--yellow);
     letter-spacing: .2rem;
+    font-weight: 500;
 }
 
 h1{
@@ -167,6 +170,7 @@ button{
     border: .1rem solid var(--yellow);
     background: var(--yellow);
     cursor: pointer;
+    font-size: .9rem;
 }
 
 .border-btn{
@@ -180,7 +184,6 @@ button{
 }
 
 /* ---------- OVERLAY ---------- */
-
 .overlay{
     position: fixed;
     inset: 0;
@@ -188,7 +191,7 @@ button{
     opacity: 0;
     visibility: hidden;
     z-index: 3;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 .overlay-active{
@@ -196,8 +199,7 @@ button{
     visibility: visible;
 }
 
-/* ---------- MOBILE ---------- */
-
+/* ---------- MOBILE VIEW ---------- */
 @media (max-width: 680px){
 
     .container{
@@ -219,7 +221,7 @@ button{
         flex-direction: column;
         padding: 3rem 0;
         text-align: center;
-        transition: .4s ease-in-out;
+        transition: transform .4s ease-in-out;
         z-index: 4;
     }
 
@@ -227,16 +229,24 @@ button{
         transform: translateX(-50%);
     }
 
+    /* 🔥 REMOVE YELLOW LINE FLASH */
+    .navlinks::before,
+    .active::before{
+        display: none;
+    }
+
     .navlinks{
         color: var(--black);
         display: block;
-        padding: .5rem 0;
+        padding: .6rem 0;
+        font-weight: 500;
     }
 
     .hero-section{
         flex-direction: column;
         gap: 2rem;
         margin-top: 2rem;
+        text-align: center;
     }
 
     h1{
