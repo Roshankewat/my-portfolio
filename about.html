@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Kewat</title>
+    
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white-clr: #fff;
+    --black-clr: #000;
+    --gray-clr: #ececec;
+    --yellow-clr: #f2bf31;
+}
+
+
+body {
+    /* background-color: #f4f6f8; */
+    background: var(--black-clr);
+}
+
+.main-container {
+    background: var(--yellow-clr);
+    /* background-color: #6495ed; */
+    height: 20rem;
+    width: 100%;
+
+}
+
+.head-image {
+    height: 20rem;
+    width: 20rem;
+
+}
+
+
+
+.container-1 {
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    
+    letter-spacing: .1rem;
+    color: #ececec;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    
+}
+
+p {
+    /* max-width: 500px; */
+    margin-top: .5rem;
+    width: auto;
+    color: var(--gray-clr);
+
+}
+
+
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #3b82f6;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 28px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills {
+    list-style: none;
+    text-align: left;
+    max-width: 400px;
+    margin: auto;
+}
+
+.skills li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills li i {
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        max-width: 100%;
+    }
+}
+
+
+
+
+.main-container {
+    display: flex;              /* Enable flexbox */
+    align-items: center;        /* Vertically center content next to the image */
+    gap: 40px;                  /* Space between image and text */
+    padding: 20px;              
+}
+
+.head-image {
+    width: 350px;               /* Adjust as needed */
+    height: 330px;
+    border-radius: 10px;        /* Optional rounded corners */
+}
+
+.name-head {
+    display: flex;
+    flex-direction: column;     /* Stack name, title, and summary vertically */
+    justify-content: center;    /* Center content vertically */
+    max-width: 600px;           /* Optional: control text width */
+}
+
+.name-1 {
+    font-size: 18px;
+    color: #555;
+   
+}
+
+.name-head h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.summary p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.my-name{
+    text-align: start;
+    align-items: end;
+    font-size: 10px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="main-container">
+        <img src="Head_image-2.png" alt="" class="head-image">
+        <div class="name-head">
+            <div class="name-1">Hello, my name is</div>
+            <h1 class="my-name">Roshan Kewat</h1>
+            <div class="summary">
+                <p>
+                    I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I write about web development on my blog and regularly speak at various web conferences and meetups. Want to know how I may help your project? Check out my project case studies and relume
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="container">
+
+        <div class="container-1">
+        <div class="heading">
+            <h1>skills Overview</h1>
+        </div>
+        <div class="overview">
+        <p >I have more than 3 years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience? <a href="Resume.html">View my online resume</a></p>
+        </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="card">
+        <div class="icon-circle">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <h2>Frontend</h2>
+        <ul class="skills">
+            <li><i class="fa-solid fa-check"></i> React / Redux / Angular</li>
+            <li><i class="fa-solid fa-check"></i> JavaScript</li>
+            <li><i class="fa-solid fa-check"></i> Node.js</li>
+            <li><i class="fa-solid fa-check"></i> Webpack / Gulp / Grunt</li>
+            <li><i class="fa-solid fa-check"></i> HTML / CSS / SASS / LESS</li>
+        </ul>
+    </div>
+
+    <!-- Backend -->
+    <div class="card">
+        <div class="icon-circle">
+            <i class="fa-solid fa-database"></i>
+        </div>
+        <h2>Backend</h2>
+        <ul class="skills">
+            <li><i class="fa-solid fa-check"></i> Python / Django</li>
+            <li><i class="fa-solid fa-check"></i> Ruby / Rails</li>
+            <li><i class="fa-solid fa-check"></i> PHP</li>
+            <li><i class="fa-solid fa-check"></i> PostgreSQL / MySQL</li>
+            <li><i class="fa-solid fa-check"></i> MongoDB</li>
+        </ul>
+    </div>
+
+    <!-- Others -->
+    <div class="card">
+        <div class="icon-circle">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <h2>Others</h2>
+        <ul class="skills">
+            <li><i class="fa-solid fa-check"></i> DevOps</li>
+            <li><i class="fa-solid fa-check"></i> Unit Testing</li>
+            <li><i class="fa-solid fa-check"></i> UX / Wireframing</li>
+            <li><i class="fa-solid fa-check"></i> Sketch / Balsamiq</li>
+            <li><i class="fa-solid fa-check"></i> WordPress / Shopify</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
