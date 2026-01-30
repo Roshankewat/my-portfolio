@@ -196,17 +196,27 @@ button{
         padding: 0 1rem;
     }
 
+    @media (max-width: 680px){
+
     .navlist{
         position: absolute;
         top: 15%;
-        left: -100%;
+        left: 50%;
+        transform: translateX(-150%); /* hidden */
         background: var(--yellow);
         width: 20rem;
         flex-direction: column;
         padding: 3rem 0;
-        transition: .4s;
+        transition: .4s ease-in-out;
         z-index: 4;
+        text-align: center;
     }
+
+    .navlist-active{
+        transform: translateX(-50%); /* perfectly centered */
+    }
+}
+
 
     .navlist-active{
         left: 50%;
@@ -240,3 +250,4 @@ button{
         visibility: visible;
     }
 }
+
